@@ -38,7 +38,7 @@ describe('End to End Tests', () => {
       expect(headerText).to.not.be.null;
       expect(headerText).to.equal('Mortgage Calculator');
     });
-  });
+  }).timeout(10000);
 
   it('should correctly calculate mortgage', () =>
   pageObject
@@ -53,5 +53,5 @@ describe('End to End Tests', () => {
     .then((outputText) => {
       expect(outputText).to.equal('$1389.35');
     })
-  ).timeout(6500);
+  ).timeout(10000);
 });

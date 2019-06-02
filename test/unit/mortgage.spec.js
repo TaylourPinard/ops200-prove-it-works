@@ -24,6 +24,6 @@ describe('Mortgage Calculator', () => {
   
   it('monthlyPayment() should correctly calculate monthly payment', () => {
     var result = mortgage.monthlyPayment();
-    expect(result.toFixed(2)).to.equal('1347.13');
+    expect(result).to.equal('1347.13');
   });
 });
